@@ -19,4 +19,4 @@ export default function createDreamTeam(members) {
   members.forEach(name => typeof name === 'string' ? teamName.push(name.toUpperCase().trim().charAt(0)) : null);
   return teamName.sort((a, b) => a.localeCompare(b)).join('');
 }
-console.log(createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null])) // 'LOO'
+// console.log(createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null])) // 'LOO'
